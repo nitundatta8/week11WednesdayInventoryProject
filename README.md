@@ -6,7 +6,7 @@
 
 ## Description
 
-_A web application that allows user to add product and get details of the product._
+_A web application that allows user to add product into inventory and get details of the products in the inventory._
 
 ## Setup/Installation Requirements
 
