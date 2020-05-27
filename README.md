@@ -2,9 +2,7 @@
 
 #### _Epicodus Week11 Wednesday Inventory Practice Project_
 
-#### By _**Nitun**
-
-_**Khan Sahab**_
+#### By _**Nitun**_  _**Khan Sahab**_
 
 ## Description
 
