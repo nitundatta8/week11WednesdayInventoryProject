@@ -16,13 +16,13 @@ namespace Inventory.Controllers
 
     public ActionResult Index()
     {
-      List<Product> model = _db.Inventories.ToList();
+      List<Product> model = _db.products.ToList();
       return View(model);
     }
 
     public ActionResult Details(int id)
     {
-      Product thisProduct = _db.Inventories.FirstOrDefault(products => products.InventoryId == id);
+      Product thisProduct = _db.products.FirstOrDefault(products => products.ProductId == id);
       return View(thisProduct);
     }
 
@@ -34,7 +34,7 @@ namespace Inventory.Controllers
     [HttpPost]
     public ActionResult Create(Product product)
     {
-      _db.Inventories.Add(product);
+      _db.products.Add(product);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }

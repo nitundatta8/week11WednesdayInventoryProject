@@ -17,7 +17,7 @@
 
 @foreach (Product product in Model)
 {
-  <li>@Html.ActionLink($"{product.Name}", "Details", new { id = product.InventoryId })</li>
+  <li>@Html.ActionLink($"{product.Name}", "Details", new { id = product.ProductId })</li>
    
 }
 
