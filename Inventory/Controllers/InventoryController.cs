@@ -9,7 +9,7 @@ namespace Inventory.Controllers
   {
     private readonly InventoryContext _db;
 
-    public ItemsController(InventoryContext db)
+    public InventoryController(InventoryContext db)
     {
       _db = db;
     }
@@ -22,7 +22,7 @@ namespace Inventory.Controllers
 
     public ActionResult Details(int id)
     {
-      Product thisProduct = _db.Products.FirstOrDefault(products => products.InventoryId == id);
+      Product thisProduct = _db.Inventories.FirstOrDefault(products => products.InventoryId == id);
       return View(thisProduct);
     }
 

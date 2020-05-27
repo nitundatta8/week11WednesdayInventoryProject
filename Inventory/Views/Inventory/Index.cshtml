@@ -15,9 +15,10 @@
   <h3>No products have been added yet!</h3>
 } 
 
-@foreach (Products product in Model)
+@foreach (Product product in Model)
 {
-  <li>@Html.ActionLink($"{item.Description}", "Details", new { id = item.ItemId })</li>
+  <li>@Html.ActionLink($"{product.Name}", "Details", new { id = product.InventoryId })</li>
+   
 }
 
 <p>@Html.ActionLink("Add new item", "Create")</p>
